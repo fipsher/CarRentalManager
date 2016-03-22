@@ -4,7 +4,7 @@ Manager for Car Rental
 Before usage of proposed application you will need to make the next steps:
 1. If you do not have MS SQL Server 2014 Express and MS SQL Management Studio 2014 you will need to install them.
 
-2. Open with a help of MS SQL Management Studio 2014 next SQL queries: create.sql; insert.sql; procs.sql and drop.sql. These files are located in the directory path: "CarRentalManager\CarRntalManager.Database\".
+2. Open with a help of MS SQL Management Studio 2014 next SQL queries: create.sql; insert.sql; procs.sql and drop.sql. These files are located in the directory path: "CarRntalManager.Database\".
 
 3. Execute these scripts to create database and fill it in the next order: create.sql; insert.sql; procs.sql (drop.sql you will need if you decide to delete tables from database).
 
