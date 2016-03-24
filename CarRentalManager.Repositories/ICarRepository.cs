@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CarRentalManager.Entities;
-
+//remove redundant usings
 namespace CarRentalManager.Repositories
 {
     public interface ICarRepository
