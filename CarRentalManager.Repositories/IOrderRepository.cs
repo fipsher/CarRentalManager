@@ -12,7 +12,7 @@ namespace CarRentalManager.Repositories
         List<Order> GetIncome(string startDate, string endDate);
         List<Order> CreateOrder(string startDate, string endDate, 
                                 string firstName, string lastName, 
-                                string licenseNum, int carId, int userId);
-        List<Order> CloseOrder(int orderId, int userId);
+                                string licenseNum, int carId, int userId);//Rewiew AZ:  set Order class as input here
+        List<Order> CloseOrder(int orderId, int userId);//Rewiew AZ:  do we really need 2 params here
     }
 }
