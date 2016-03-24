@@ -11,7 +11,7 @@ namespace CarRentalManager.Repositories
     {
         List<Car> GetPriceList();
         List<Car> GetAvailableCars(string startDate, string endDate, string carClass, 
-                                    int passengerNum, decimal fuelConsumption, decimal carPrice);
+                                    int passengerNum, decimal fuelConsumption, decimal carPrice);//Rewiew AZ: create filter class for cars to set it as input param here 
         List<DelayedCar> GetDelayedCars();
 
     }
