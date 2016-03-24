@@ -27,12 +27,14 @@ namespace CarRentalManager.Forms
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
+            
+            // IRewiew AZ: think it'll be better not to choose car by Id. Just choose car from carList
             string startDate = dtpStart.Value.ToString("yyyy-MM-dd");
             string endDate = dtpEnd.Value.ToString("yyy-MM-dd");
             string firstName = tbFirstName.Text.ToString();
             string lastName = tbLastName.Text.ToString();
             string licenseNum = tbLicenseNum.Text.ToString();
-            int carId = (tbCarId.Text.ToString() == "") ? 0 : int.Parse(tbCarId.Text.ToString());
+            int carId = (tbCarId.Text.ToString() == "") ? 0 : int.Parse(tbCarId.Text.ToString());// Rewiew AZ:  parse exception (you dont check correctness of input data)
 
             List<Order> ordersList = _orderRepository.CreateOrder(startDate, endDate, firstName, 
                                                                     lastName, licenseNum, carId, CurrentUser.Id);
