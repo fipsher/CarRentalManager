@@ -26,7 +26,9 @@ namespace CarRentalManager.Forms
         }
 
         private void btnAccept_Click(object sender, EventArgs e)
-        {               
+        {
+             //Rewiew AZ: can we remove logic outside Form calss? (Recoment to create additional class library with business logic (it will helps you with Unit Tests + exeption handling))
+            //you can even add some exeption hangling and base logging
             string dateStart = dtpStart.Value.ToString("yyyy-MM-dd");
             string dateEnd = dtpEnd.Value.ToString("yyy-MM-dd");
             string carClass = (cbCarClass.SelectedItem == null)? "": cbCarClass.SelectedItem.ToString();
