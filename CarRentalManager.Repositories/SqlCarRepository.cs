@@ -22,7 +22,11 @@ namespace CarRentalManager.Repositories
         {
             _connectionString = connectionString;
         }
-
+//Rewiew AZ: 
+        /// <summary>
+        /// Create summary like this (more informative)
+        /// </summary>
+        /// <returns></returns>
         //Getting price list
         public List<Car> GetPriceList()
         {
